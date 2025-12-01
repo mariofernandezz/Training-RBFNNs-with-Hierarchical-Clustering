@@ -1,8 +1,10 @@
 # 🧠 Entrenamiento de RBFNN con Clustering Jerárquico
 
-Este repositorio presenta un nuevo método de entrenamiento para **Redes Neuronales de Función de Base Radial (RBFNN)** orientado a automatizar la selección del número de neuronas y mejorar la eficiencia computacional mediante regularización avanzada.
+Este repositorio presenta un nuevo método de entrenamiento para **Redes Neuronales de Función de Base Radial (RBFNN)**.
 
-El objetivo principal es eliminar la elección arbitraria del número de neuronas y construir modelos precisos, estables y computacionalmente eficientes.
+Tradicionalmente, el entrenamiento de RBFNN se basa en **K-means para la selección y colocación de neuronas**, lo que obliga a fijar previamente el número de neuronas del modelo. Esta elección suele ser arbitraria, dependiente del dataset y difícil de ajustar correctamente.
+
+El objetivo de este trabajo es eliminar esta limitación introduciendo una estrategia basada en **clustering jerárquico**, que permite **seleccionar automáticamente el número de neuronas** a partir de los propios datos, sin necesidad de definirlo de antemano.
 
 ---
 
@@ -14,8 +16,7 @@ El objetivo principal es eliminar la elección arbitraria del número de neurona
   - Cálculo de pesos.
 - Evaluación con datos sintéticos y reales.
 - Comparativa frente al enfoque clásico basado en K-means.
-- Buen comportamiento en escenarios de gran escala.
-- Resultados competitivos usando hardware modesto.
+- Prueba de escalabilidad.
 
 ---
 
@@ -25,22 +26,10 @@ El objetivo principal es eliminar la elección arbitraria del número de neurona
   <img src="figures/flujo.jpg" width="500" heigh="300">
 </p>
 
-El proceso completo de entrenamiento sigue este flujo:
-
-- Carga de los datos.
-- División en conjuntos de entrenamiento y test.
-- Inicialización y exploración de valores para el parámetro de suavizado (σ).
-- Selección automática del número óptimo de neuronas mediante clustering jerárquico.
-- Colocación de los centros usando K-means.
-- Construcción del modelo final con los mejores hiperparámetros.
-- Aplicación de regularización sobre los pesos.
-- Evaluación del modelo mediante NMSE.
-
 ## 📊 Resultados
 
 El método propuesto:
 
-- Proporciona buenas estimaciones en tareas de regresión.
 - Reduce el coste computacional frente a métodos más complejos.
 - Mantiene un alto nivel de precisión.
 - Escala razonablemente bien en grandes volúmenes de datos.

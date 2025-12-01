@@ -20,3 +20,44 @@ El objetivo principal es eliminar la elección arbitraria del número de neurona
 ---
 
 ## ⚙️ Flujo general del método
+
+![Flujo del entrenamiento RBFNN](figures/flujo.png)
+
+El proceso completo de entrenamiento sigue este flujo:
+
+- Carga de los datos.
+- División en conjuntos de entrenamiento y test.
+- Inicialización y exploración de valores para el parámetro de suavizado (σ).
+- Selección automática del número óptimo de neuronas mediante clustering jerárquico.
+- Colocación de los centros usando K-means.
+- Construcción del modelo final con los mejores hiperparámetros.
+- Aplicación de regularización sobre los pesos.
+- Evaluación del modelo mediante NMSE.
+
+## 📊 Resultados
+
+El método propuesto:
+
+- Proporciona buenas estimaciones en tareas de regresión.
+- Reduce el coste computacional frente a métodos más complejos.
+- Mantiene un alto nivel de precisión.
+- Escala razonablemente bien en grandes volúmenes de datos.
+
+---
+
+## 📄 Memoria completa del TFG
+
+Puedes consultar el documento completo del trabajo aquí:
+
+📘 **[Descargar memoria (PDF)](Memoria-mario.fernandez.simon.pdf)**
+
+---
+
+## 👤 Autor
+
+**Mario Fernández Simón**  
+Ingeniería Informática (Computación)
+  
+💼 [Conéctate conmigo en LinkedIn](https://www.linkedin.com/in/Mario Fernandez Simon)
+
+---

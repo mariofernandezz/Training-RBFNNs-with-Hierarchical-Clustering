@@ -21,7 +21,9 @@ El objetivo principal es eliminar la elección arbitraria del número de neurona
 
 ## ⚙️ Flujo general del método
 
-![Flujo del entrenamiento RBFNN](figures/flujo.jpg)
+<p align="center">
+  <img src="figures/flujo.jpg" width="750">
+</p>
 
 El proceso completo de entrenamiento sigue este flujo:
 

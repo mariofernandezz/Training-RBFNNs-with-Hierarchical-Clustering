@@ -22,7 +22,7 @@ El objetivo principal es eliminar la elección arbitraria del número de neurona
 ## ⚙️ Flujo general del método
 
 <p align="center">
-  <img src="figures/flujo.jpg" width="750">
+  <img src="figures/flujo.jpg" width="500" heigh="500">
 </p>
 
 El proceso completo de entrenamiento sigue este flujo:
